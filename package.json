@@ -9,12 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@gsap/react": "^2.1.1",
+    "@mui/material": "^6.0.2",
+    "@mui/material-nextjs": "^6.0.2",
+    "@mui/styled-engine-sc": "^6.0.2",
+    "@react-three/drei": "^9.112.0",
+    "@react-three/fiber": "^8.17.7",
+    "gsap": "^3.12.5",
+    "next": "14.2.9",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.9"
+    "styled-components": "^6.1.13",
+    "three": "^0.168.0"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.9"
+    "eslint-config-next": "14.2.9",
+    "r3f-perf": "^7.2.1"
   }
 }
