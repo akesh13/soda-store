@@ -1,8 +1,7 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
-import { Environment, Float, View } from "@react-three/drei";
-import FloatingCan from "./FloatingCan";
+import { View } from "@react-three/drei";
 
 const ViewCanvas = () => {
   return (
@@ -12,7 +11,7 @@ const ViewCanvas = () => {
         top: 0,
         left: "50%",
         transform: "translate(-50%)",
-        overflow: "hidden",
+        // overflow: "hidden",
         // pointerEvents: "none",
         zIndex: 30,
       }}

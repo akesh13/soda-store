@@ -87,13 +87,11 @@ function HeroSection() {
         className="hero_wrapper"
         sx={{
           minHeight: "100dvh",
-          //   backgroundColor: "#fde047",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
           gap: "2rem",
-          position: "relative",
         }}
       >
         <View
@@ -217,48 +215,98 @@ function HeroSection() {
 
 export default HeroSection;
 
-{
-  /* <Comp className={clsx("px-4 first:pt-10 md:px-6", className)} {...restProps}>
-  <div className="mx-auto flex w-full max-w-7xl flex-col items-center">
-    <div className="grid">
-      <div className="grid h-screen place-items-center">
-        <div className="grid auto-rows-min place-items-center text-center">
-          <h1 className="hero-header text-7xl font-black uppercase leading-[.8] text-orange-500 md:text-[9rem] lg:text-[13rem]">
-            <TextSplitter
-              text={asText(slice.primary.heading)}
-              wordDisplayStyle="block"
-              className="hero-header-word"
-            />
-          </h1>
-          <div className="hero-subheading mt-12 text-5xl font-semibold text-sky-950 lg:text-6xl">
-            <PrismicRichText field={slice.primary.subheading} />
-          </div>
-          <div className="hero-body text-2xl font-normal text-sky-950">
-            <PrismicRichText field={slice.primary.body} />
-          </div>
-          <Button
-            buttonLink={slice.primary.button_link}
-            buttonText={slice.primary.button_text}
-            className="hero-button mt-12"
-          />
-        </div>
-      </div>
-
-      <div className="text-side relative z-[80] grid h-screen items-center gap-4 md:grid-cols-2">
-        <PrismicNextImage
-          className="w-full md:hidden"
-          field={slice.primary.cans_image}
-        />
-        <div>
-          <h2 className="text-side-heading text-balance text-6xl font-black uppercase text-sky-950 lg:text-8xl">
-            <TextSplitter text={asText(slice.primary.second_heading)} />
-          </h2>
-          <div className="text-side-body mt-4 max-w-xl text-balance text-xl font-normal text-sky-950">
-            <PrismicRichText field={slice.primary.second_body} />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</Comp> */
-}
+// {
+  
+//   const MyComponent = ({ className, ...restProps }) => {
+//     return (
+//       <Box className={clsx("px-4 first:pt-10 md:px-6", className)} {...restProps}>
+//         <Box sx={{ mx: 'auto', maxWidth: '7xl', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+//           <Grid container>
+//             <Grid item xs={12} sx={{ height: '100vh', display: 'grid', placeItems: 'center' }}>
+//               <Grid container justifyContent="center" alignItems="center" textAlign="center">
+//                 <Typography
+//                   variant="h1"
+//                   sx={{
+//                     fontSize: { xs: '7xl', md: '9rem', lg: '13rem' },
+//                     fontWeight: 'bold',
+//                     textTransform: 'uppercase',
+//                     lineHeight: 0.8,
+//                     color: 'orange',
+//                   }}
+//                 >
+//                   <TextSplitter
+//                     text={asText(slice.primary.heading)}
+//                     wordDisplayStyle="block"
+//                     className="hero-header-word"
+//                   />
+//                 </Typography>
+//                 <Typography
+//                   variant="h2"
+//                   sx={{
+//                     mt: 12,
+//                     fontSize: { xs: '5xl', lg: '6xl' },
+//                     fontWeight: 'bold',
+//                     color: 'skyblue',
+//                   }}
+//                 >
+//                   <PrismicRichText field={slice.primary.subheading} />
+//                 </Typography>
+//                 <Typography
+//                   variant="body1"
+//                   sx={{ fontSize: '2xl', fontWeight: 'normal', color: 'skyblue' }}
+//                 >
+//                   <PrismicRichText field={slice.primary.body} />
+//                 </Typography>
+//                 <Button
+//                   href={slice.primary.button_link}
+//                   sx={{ mt: 12 }}
+//                   className="hero-button"
+//                 >
+//                   {slice.primary.button_text}
+//                 </Button>
+//               </Grid>
+//             </Grid>
+  
+//             <Grid
+//               container
+//               alignItems="center"
+//               gap={4}
+//               sx={{ height: '100vh', zIndex: 80, gridTemplateColumns: { md: '1fr 1fr' } }}
+//             >
+//               <PrismicNextImage
+//                 sx={{ display: { xs: 'block', md: 'none' }, width: '100%' }}
+//                 field={slice.primary.cans_image}
+//               />
+//               <Grid item>
+//                 <Typography
+//                   variant="h2"
+//                   sx={{
+//                     fontSize: { xs: '6xl', lg: '8xl' },
+//                     fontWeight: 'bold',
+//                     textTransform: 'uppercase',
+//                     color: 'skyblue',
+//                   }}
+//                 >
+//                   <TextSplitter text={asText(slice.primary.second_heading)} />
+//                 </Typography>
+//                 <Typography
+//                   variant="body1"
+//                   sx={{
+//                     mt: 4,
+//                     maxWidth: 'xl',
+//                     fontSize: 'xl',
+//                     fontWeight: 'normal',
+//                     color: 'skyblue',
+//                   }}
+//                 >
+//                   <PrismicRichText field={slice.primary.second_body} />
+//                 </Typography>
+//               </Grid>
+//             </Grid>
+//           </Grid>
+//         </Box>
+//       </Box>
+//     );
+//   };
+  
+// }

@@ -44,36 +44,37 @@ function Scene() {
       y: -5,
     });
 
-    const introTl = gsap.timeline({
-      defaults: {
-        duration: 1,
-        ease: "back.out(1.4)",
-      },
-    });
-    introTl.from(
-      can1GroupRef.current.position,
-      {
-        y: -5,
-        x: 1,
-      },
-      0
-    );
-    introTl.from(
-      can1GroupRef.current.rotation,
-      {
-        z: 3,
-      },
-      0
-    );
-    introTl.from(
-      can2GroupRef.current.position,
-      {
-        y: 5,
-        x: 1,
-      },
-      0
-    );
-    introTl.from(
+      
+      const introTl = gsap.timeline({
+        defaults: {
+          duration: 1,
+          ease: "back.out(1.4)",
+        },
+      });
+      introTl.from(
+        can1GroupRef.current.position,
+        {
+          y: -5,
+          x: 1,
+        },
+        0
+      );
+      introTl.from(
+        can1GroupRef.current.rotation,
+        {
+          z: 3,
+        },
+        0
+      );
+      introTl.from(
+        can2GroupRef.current.position,
+        {
+          y: 5,
+          x: 1,
+        },
+        0
+      );
+      introTl.from(
       can2GroupRef.current.rotation,
       {
         z: 3,
@@ -93,7 +94,37 @@ function Scene() {
     });
     scrollTl.to(groupRef.current.rotation, {
       y: Math.PI * 2,
-    });
+    })
+
+    // can1
+
+    .to(canRef1.current.position,{x:-0.2, y:-0.7, z:-2}, 0)
+    .to(canRef1.current.rotation,{z:0.3}, 0)
+
+    // can2
+
+    .to(canRef2.current.position,{x:1, y:-.2, z:-1}, 0)
+    .to(canRef2.current.rotation,{z:0}, 0)
+
+    // can3
+
+    .to(canRef3.current.position,{x: -0.3, y: 0.5, z: -1 }, 0)
+    .to(canRef3.current.rotation,{z:-0.1}, 0)
+
+    // can4
+
+    .to(canRef4.current.position,{x: 0, y: -0.3, z: 0.5 }, 0)
+    .to(canRef4.current.rotation,{z:0.3}, 0)
+
+    // can5
+
+    .to(canRef5.current.position,{x: 0.3, y: 0.5, z: -0.5 }, 0)
+    .to(canRef5.current.rotation,{z:-0.25}, 0)
+
+    .to(groupRef.current.position,{
+      x:1, duration:3, ease:"sine.inOut"
+    }, 1.3)
+
   });
 
   return (

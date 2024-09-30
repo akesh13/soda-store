@@ -4,7 +4,6 @@ import { forwardRef } from "react";
 import { Float } from "@react-three/drei";
 
 import { SodaCan } from "@/components/SodaCan";
-import { Group } from "three";
 
 const FloatingCan = forwardRef(
   (
